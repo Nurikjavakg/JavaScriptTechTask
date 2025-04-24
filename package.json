@@ -6,10 +6,6 @@
     "test": "jest",
     "test:performance": "jest --config jest.performance.config.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "devDependencies": {
     "jest": "^29.7.0"
   }
