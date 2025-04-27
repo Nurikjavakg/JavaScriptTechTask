@@ -1,18 +1,9 @@
 function countWellFormedParenthesis(n) {
-    let count = 0;
-
-    function generate(open, close) {
-        if (open === n && close === n) {
-            count++;
-            return;
-        }
-
-        if (open < n) generate(open + 1, close);
-        if (close < open) generate(open, close + 1);
+    let result = 1;
+    for (let i = 0; i < n; i++) {
+        result = (result * 2 * (2 * i + 1)) / (i + 2);
     }
-
-    generate(0, 0);
-    return count;
+    return Math.floor(result);
 }
 
 module.exports = { countWellFormedParenthesis };
