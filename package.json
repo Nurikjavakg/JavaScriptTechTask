@@ -7,6 +7,6 @@
     "test:performance": "jest --config jest.performance.config.js"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^29.0.0"
   }
 }
